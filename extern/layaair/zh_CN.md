@@ -1,12 +1,4 @@
 
-
-[TOCM]
-
-
-[TOC]
-
-
-
 qrCode
 ===
 
