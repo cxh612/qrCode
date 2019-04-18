@@ -1,5 +1,6 @@
 /**
  * Created by qingzhu on 15/7/1.
+ * modify by bq49 at 20190418 for LayaAir
  */
 module qr {
     export class QRCode{
@@ -8,7 +9,7 @@ module qr {
          * width,height 二维码宽度，高度
          * color 颜色
          * */
-        public static create(msg:string,color="#000000", width:number=200,height:number=200,errorCorrectLevel=2):MySprite{
+        public static create(msg:string,color="#000000", width:number=200,height:number=200,errorCorrectLevel=2):Laya.Sprite{
           var _htOption = {
                 width : width,
                 height : height,
@@ -21,8 +22,8 @@ module qr {
             return  QRCode.draw(_oQRCode,_htOption);
         }
 
-        public static draw(m:qr.QRCodeModel ,_htOption):MySprite{
-            var sc:MySprite = new MySprite();
+        public static draw(m:qr.QRCodeModel ,_htOption):Laya.Sprite{
+            var sc:Laya.Sprite = new Laya.Sprite();
             var _htOption = _htOption;
             var nCount = m.getModuleCount();
             var nWidth = Math.floor(_htOption.width / nCount);

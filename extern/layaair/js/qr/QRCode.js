@@ -1,5 +1,6 @@
 /**
  * Created by qingzhu on 15/7/1.
+ * modify by bq49 at 20190418 for LayaAir
  */
 var qr;
 (function (qr) {
@@ -28,7 +29,7 @@ var qr;
             return QRCode.draw(_oQRCode, _htOption);
         };
         QRCode.draw = function (m, _htOption) {
-            var sc = new MySprite();
+            var sc = new Laya.Sprite();
             var _htOption = _htOption;
             var nCount = m.getModuleCount();
             var nWidth = Math.floor(_htOption.width / nCount);
