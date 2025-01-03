@@ -1,5 +1,5 @@
 # qrCode
-egret 二维码生成算法,Typescript 二维码生成算法。
+Typescript 二维码生成算法。
 
 用法:
 egret.Sprite sprite = qr.QRCode.create("http://www.egret.com");
